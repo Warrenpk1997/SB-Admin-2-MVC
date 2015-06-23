@@ -1,0 +1,50 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server Compact Edition
+-- --------------------------------------------------
+-- Date Created: 05/01/2015 13:45:00
+-- Generated from EDMX file: C:\Users\wcaulton.KINSLEY\Documents\Visual Studio 2012\Templates\BootstrapTemplates\SBAdmin2\SBAdmin2\SimpleMembershipModel.edmx
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- NOTE: if the constraint does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- NOTE: if the table does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'UserProfiles'
+CREATE TABLE [UserProfiles] (
+    [UserId] int IDENTITY(1,1) NOT NULL,
+    [UserName] nvarchar(4000)  NOT NULL,
+    [Birthday] datetime  NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [UserId] in table 'UserProfiles'
+ALTER TABLE [UserProfiles]
+ADD CONSTRAINT [PK_UserProfiles]
+    PRIMARY KEY ([UserId] );
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------
